@@ -11,6 +11,8 @@ autopep8 = "*"
 [packages]
 django = "*"
 djangorestframework = "*"
+python-dotenv = "*"
+djongo = "*"
 
 [requires]
 python_version = "3.6"

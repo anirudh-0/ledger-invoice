@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'invoices'
 ]
 
@@ -76,8 +80,14 @@ WSGI_APPLICATION = 'ledger_invoice.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'CLIENT': {
+            'name': os.getenv('DB_NAME'),
+            'host': os.getenv('DB_HOST'),
+            'username': os.getenv('DB_USER'),
+            'password': os.getenv('DB_PASSWORD'),
+            # 'authMechanism': 'SCRAM-SHA-1'
+        }
     }
 }
 
