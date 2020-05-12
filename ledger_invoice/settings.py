@@ -79,15 +79,18 @@ WSGI_APPLICATION = 'ledger_invoice.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'djongo',
+    #     'CLIENT': {
+    #         'name': os.getenv('DB_NAME'),
+    #         'host': os.getenv('DB_HOST'),
+    #         'username': os.getenv('DB_USER'),
+    #         'password': os.getenv('DB_PASSWORD')
+    #     }
+    # },
     'default': {
-        'ENGINE': 'djongo',
-        'CLIENT': {
-            'name': os.getenv('DB_NAME'),
-            'host': os.getenv('DB_HOST'),
-            'username': os.getenv('DB_USER'),
-            'password': os.getenv('DB_PASSWORD'),
-            # 'authMechanism': 'SCRAM-SHA-1'
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

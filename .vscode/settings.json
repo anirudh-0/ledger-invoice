@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "./db.sqlite3",
+            "dialect": "SQLite",
+            "isActive": true,
+            "isConnected": true,
+            "name": "ledger-invoice-temp-db"
+        }
+    ]
+}
