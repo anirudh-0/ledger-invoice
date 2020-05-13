@@ -1,0 +1,35 @@
+{
+  "name": "ledger-and-invoice",
+  "version": "1.0.0",
+  "description": "Django project. React webapp with django-rest. MongoDB hopefully.",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/main.js",
+    "build-prod": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anirudh-9681/ledger-invoice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anirudh-9681/ledger-invoice/issues"
+  },
+  "homepage": "https://github.com/anirudh-9681/ledger-invoice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
