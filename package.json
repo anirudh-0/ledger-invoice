@@ -4,8 +4,8 @@
   "description": "Django project. React webapp with django-rest. MongoDB hopefully.",
   "main": "index.js",
   "scripts": {
-    "build-dev": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/main.js",
-    "build-prod": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/main.js"
+    "build": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/main.js",
+    "build-prod": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/main.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,10 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^3.5.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
