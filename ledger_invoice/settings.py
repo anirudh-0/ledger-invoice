@@ -28,7 +28,7 @@ SECRET_KEY = '6)i^e_o$ss%me5s)84m(2zrlg(a4+gol!254vrb0(k6o&ylznu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ledger-invoice.herokuapp.com"]
 
 
 # Application definition
