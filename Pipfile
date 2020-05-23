@@ -13,6 +13,7 @@ django = "*"
 djangorestframework = "*"
 python-dotenv = "*"
 djongo = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
