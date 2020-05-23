@@ -7,5 +7,6 @@
             "isConnected": true,
             "name": "ledger-invoice-temp-db"
         }
-    ]
+    ],
+    "python.pythonPath": "/home/anirudh/.local/share/virtualenvs/ledger-and-invoice-LO_jToXi/bin/python"
 }
